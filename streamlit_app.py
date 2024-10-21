@@ -1,5 +1,4 @@
 from transformers import pipeline
-import tensorflow
 import streamlit as st
 
 with st.form("my_form"):

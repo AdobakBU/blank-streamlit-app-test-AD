@@ -12,7 +12,5 @@ with st.form("my_form"):
     if submitted:
         generator = pipeline('text-generation', model='gpt2')
         generator(user_prompt, max_length=user_length, num_return_sequences=10, truncation=True)
-
-### Print all 10 completions:
-for i in range(10):
-  st.write(response.choices[i].message.content)
+        for i in range(10):
+          st.write(response.choices[i].message.content)

@@ -10,5 +10,6 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Submit")
     if submitted:
         generator = pipeline('text-generation', model='gpt2')
-        st.write(generator(user_prompt, max_length=int(user_length), num_return_sequences=10, truncation=True))
+        st.write(generator(user_prompt, max_length=int(user_length), num_return_sequences=1, truncation=True, temperature=0.2))
+        st.write(generator(user_prompt, max_length=int(user_length), num_return_sequences=1, truncation=True, temperature=0.9))
 

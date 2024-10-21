@@ -1,3 +1,3 @@
 streamlit
 transformers
-pytorch
+pytorch2.0
